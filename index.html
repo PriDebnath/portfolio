@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+
+    <!-- link to css file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- links for google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link for font awesome icon -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="nav_li"><a href="#home">Home</a></li>
+
+        <li class="nav_li"><a href="#about"> About</a></li>
+
+        <li class="nav_li"><a href="#service">Service</a></li>
+
+        <li class="nav_li"><a href="#projects">Projects</a></li>
+
+        <li class="nav_li"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <header id="home">
+      <div class="header_left">
+        <div class="header_text_container">
+          <div><span class="its_me">It's me</span></div>
+          <h1>Pri<span class="my_title">tam Debnath</span></h1>
+          <h2>A junior front-end web Developer</h2>
+          <p>Builds stuff that really matters to achieve people's goal .</p>
+          <button class="btn contact">
+            <a href="https://www.linkedin.com/in/pritam-debnath-762019239"
+              >Contact me</a
+            >
+          </button>
+        </div>
+      </div>
+      <div class="header_right">
+        <div class="header_right_img_container">
+          <img class="pri" src="./images/pri.png" alt="Pri not found" />
+          <div class="circle"></div>
+        </div>
+      </div>
+    </header>
+    <article id="about">
+      <div class="about_head"><h1>About me</h1></div>
+      <div class="about_text">
+        <p>
+          I am Pritam debnath . lives in kolkata , India . I am
+          <span class="orange">self-taught</span> front-end web developer
+          looking for a <span class="orange">freelance</span> work . I will love
+          work remotely and have experience in remote teams .
+        </p>
+      </div>
+    </article>
+
+    <article id="service">
+      <h1>Service</h1>
+      <p>
+        If it is about <span class="orange">web</span> I can come up with a
+        <span class="orange">solution .</span> I have been using web
+        technologies , Adapting with new technologies and frameworks for 3 years
+        . I can create <span class="orange">responsive</span> and
+        <span class="orange">scalable</span> website and landing page .
+      </p>
+      <h2>Technologies I use to</h2>
+      <div class="service_card_container">
+        <div class="service_card">
+          <h3 class="underline">Design</h3>
+
+          <h4>Figma</h4>
+          <h4>Canva</h4>
+          <h4>Wordpresss</h4>
+          <h4>Wire framing</h4>
+        </div>
+        <div class="service_card">
+          <h3 class="underline">Develope</h3>
+          <h4>Html</h4>
+          <h4>Css</h4>
+          <h4>Javascript</h4>
+          <h4>React</h4>
+        </div>
+      </div>
+    </article>
+
+    <section id="projects">
+      <h1>Project</h1>
+
+      <div id="full_image_container">
+        <img alt="" id="full_image" />
+        <button id="btn">X</button>
+      </div>
+      <div class="image_container">
+        <div class="image_container_images">
+          <p>
+            <a href="https://github.com/PriDebnath/weather_app" class="tooltip"
+              >Weather app <span class="tooltiptext">Code on github</span></a
+            >
+          </p>
+          <img
+            loading="lazy"
+            src="./images/weather_app.png"
+            alt=""
+            class="image"
+          />
+        </div>
+
+        <div class="image_container_images">
+          <p>
+            <a href="https://github.com/PriDebnath/todo_app" class="tooltip"
+              >Todo app <span class="tooltiptext">Code on github</span></a
+            >
+          </p>
+          <img
+            loading="lazy"
+            src="./images/todo_app.png"
+            alt=""
+            class="image"
+          />
+        </div>
+
+        <div class="image_container_images">
+          <p>
+            <a
+              href="https://github.com/PriDebnath/breez-The-place-of-yoga"
+              class="tooltip"
+              >Breez - The place of yoga
+              <span class="tooltiptext">Code on github</span></a
+            >
+          </p>
+          <img loading="lazy" src="./images/breez.png" alt="" class="image" />
+        </div>
+
+        <div class="image_container_images">
+          <p>
+            <a href="https://github.com/PriDebnath/filter_user-" class="tooltip"
+              >Filter user - live<span class="tooltiptext"
+                >Code on github</span
+              ></a
+            >
+          </p>
+          <img
+            loading="lazy"
+            src="./images/filter_user.png"
+            alt=""
+            class="image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="social_icons">
+        <h1>Find me on</h1>
+        <a href="https://www.linkedin.com/in/pritam-debnath-762019239">
+          <i class="fa-brands fa-linkedin-in btn"></i
+        ></a>
+        <a href="https://github.com/PriDebnath">
+          <i class="fa-brands fa-github btn"></i
+        ></a>
+
+        <a href="https://instagram.com/spoiler_0p">
+          <i class="fa-brands fa-instagram btn"></i
+        ></a>
+      </div>
+      <form
+        action="https://formsubmit.co/debnathpritam0802@gmail.com"
+        method="post"
+      >
+        <label for="name">Name </label>
+        <input
+          required="true"
+          id="name"
+          type="text"
+          class="name"
+          name="name"
+          placeholder="Your name"
+        />
+
+        <label for="company">Company </label>
+        <input
+          id="company"
+          type="text"
+          name="company"
+          class="company"
+          placeholder="Your company"
+        />
+
+        <label for="email"> Email</label>
+
+        <input
+          required="true"
+          type="text"
+          name="email"
+          class="email"
+          placeholder="email"
+        />
+
+        <textarea
+          required="true"
+          cols="30"
+          rows="4"
+          class="message"
+          name="message"
+          placeholder="message"
+        ></textarea>
+        <button class="btn submit">Send</button>
+      </form>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
