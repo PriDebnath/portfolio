@@ -48,7 +48,7 @@ header {
   overflow: hidden;
   display: flex;
 
-  height: 85vh;
+  height: 80vh;
   justify-content: center;
   align-items: center;
   background: var(--light-blue);
