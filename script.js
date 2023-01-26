@@ -50,3 +50,30 @@ inputs.forEach((input) => {
   removeEventListener("mouseover", handleMouseover);
   removeEventListener("mouseout", handleMouseout);
 });
+
+// load more projects
+
+let loadMore = document.querySelector(".loadMore")
+loadMore.addEventListener("click",()=>{
+  console.log("click");
+  let image_container_images = document.querySelectorAll(".image_container_images")
+  image_container_images.forEach((project)=>{
+    project.classList.remove("hide-project")
+    loadMore.classList.add("hide-project")
+  })
+})
+
+// show hide contact form
+
+let form = document.querySelector("form")
+console.log(form.clientHeight);
+let mailIcon = document.querySelector(".mail")
+mailIcon.addEventListener('click',()=>{
+  console.log('cli');
+console.log(form.clientHeight);
+ window.scrollTo({
+  top : document.clientHeight ,
+  behavior : "smooth"
+ })
+ form.classList.toggle("form-hide")
+})
