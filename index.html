@@ -10,6 +10,7 @@
 
     <!-- link to css file -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="butterfly.css" />
 
     <!-- links for google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,8 +48,27 @@
     <header id="home">
       <div class="header_left">
         <div class="header_text_container">
-          <div><span class="its_me">It's me</span></div>
+          <div><span class="its_me">It's me</span></div> 
+          <div class="butterflyContainer">
+            <!-- butterfly by @dazulu -->
+          <div class="butterfly">
+            <div class="wing">
+                <div class="bit"></div>
+                <div class="bit"></div>
+            </div>
+            <div class="wing">
+                <div class="bit"></div>
+                <div class="bit"></div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+      </div>
+        
           <h1>Pri<span class="my_title">tam Debnath</span></h1>
+
+
+        
+
           <h2>A junior front-end web Developer</h2>
           <p>Builds stuff that really matters to achieve people's goal .</p>
           <button class="btn contact">
@@ -69,9 +89,9 @@
       <div class="about_head"><h1>About me</h1></div>
       <div class="about_text">
         <p>
-          Lives in kolkata , India . I am
-          <span class="orange">self-taught</span> front-end web developer
-          looking for a <span class="orange">freelance</span> work . I will love
+          Lives in kolkata , India . I am a
+          <span class="orange">self-taught programmer</span> skilled in  web technologies . 
+          Looking for a <span class="orange">freelance</span> work . I will love
           work remotely and have experience in remote teams .
         </p>
       </div>
@@ -145,15 +165,16 @@
         <button id="btn">X</button>
       </div>
       <div class="image_container">
+
         <div class="image_container_images">
           <p>
-            <a href="https://github.com/PriDebnath/weather_app" class="tooltip"
-              >Weather app <span class="tooltiptext">Code on github</span></a
+            <a href="https://github.com/PriDebnath/image-gallery" class="tooltip"
+              >Gallery app <span class="tooltiptext">Code on github</span></a
             >
           </p>
           <img
             loading="lazy"
-            src="./images/weather_app.png"
+            src="./images/image-gallery.png"
             alt=""
             class="image"
           />
@@ -161,13 +182,13 @@
 
         <div class="image_container_images">
           <p>
-            <a href="https://github.com/PriDebnath/todo_app" class="tooltip"
-              >Todo app <span class="tooltiptext">Code on github</span></a
+            <a href="https://github.com/PriDebnath/iShow" class="tooltip"
+              >Moive app <span class="tooltiptext">Code on github</span></a
             >
           </p>
           <img
             loading="lazy"
-            src="./images/todo_app.png"
+            src="./images/movie-app.png"
             alt=""
             class="image"
           />
@@ -186,6 +207,38 @@
         </div>
 
         <div class="image_container_images">
+          <p>
+            <a href="https://github.com/PriDebnath/weather_app" class="tooltip"
+              >Weather app <span class="tooltiptext">Code on github</span></a
+            >
+          </p>
+          <img
+            loading="lazy"
+            src="./images/weather_app.png"
+            alt=""
+            class="image"
+          />
+        </div>
+
+        <div class="image_container_images hide-project">
+          <p>
+            <a href="https://github.com/PriDebnath/todo_app" class="tooltip"
+              >Todo app <span class="tooltiptext">Code on github</span></a
+            >
+          </p>
+          <img
+            loading="lazy"
+            src="./images/todo_app.png"
+            alt=""
+            class="image"
+          />
+        </div>
+
+        <p class="loadMore"> Load more ...</p>
+
+       
+
+        <div class="image_container_images hide-project">
           <p>
             <a href="https://github.com/PriDebnath/filter_user-" class="tooltip"
               >Filter user - live<span class="tooltiptext"
@@ -206,6 +259,8 @@
     <section id="contact">
       <div class="social_icons">
         <h1>Find me on</h1>
+        <div class="icons">
+          
         <a href="https://www.linkedin.com/in/pritam-debnath-762019239">
           <i class="fa-brands fa-linkedin-in btn"></i
         ></a>
@@ -216,10 +271,17 @@
         <a href="https://instagram.com/spoiler_0p">
           <i class="fa-brands fa-instagram btn"></i
         ></a>
+
+        <a class="mail">
+          <i class="fa fa-envelope btn" ></i>
+        </a>
+      </div>
+
       </div>
       <form
         action="https://formsubmit.co/debnathpritam0802@gmail.com"
         method="post"
+        class="form-hide"
       >
         <label for="name">Name </label>
         <input
@@ -261,6 +323,7 @@
         <button class="btn submit">Send</button>
       </form>
     </section>
+
 
     <script src="./script.js"></script>
   </body>

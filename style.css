@@ -67,6 +67,10 @@ header {
   flex-direction: column;
   height: 160%;
 }
+
+
+
+
 h1 {
   font-size: 2.5rem !important;
 
@@ -114,29 +118,37 @@ p {
   border-radius: 0.5rem;
   background: var(--primary-blue);
   font-weight: bold;
-  z-index: 1;
-  box-shadow: 0 0.4rem 0.3rem rgba(0, 0, 255, 0.3);
+  /* z-index: 1; */
+  /* box-shadow: 0 0.4rem 0.3rem rgba(0, 0, 255, 0.3); */
   color: white;
+  left: -6rem;
+  top: 2rem;
 }
 
+/* 
 .its_me::after {
   content: "";
-  height: 1rem;
+  height: 55%;
   background: var(--primary-blue);
   width: 1rem;
   position: absolute;
   transform: rotate(45deg);
-  top: 1.2rem;
-  right: 1.5rem;
+  top: 0.5rem;
+  right: -0.3rem;
   z-index: -1;
   font-family: "Libre Baskerville", serif;
 }
+ */
+
 .my_title {
   opacity: 0;
   animation: visible 1.5s ease;
   animation-iteration-count: 1;
   animation-delay: 3s;
+  position: relative;
 }
+
+
 @keyframes visible {
   0% {
     opacity: 0;
@@ -360,6 +372,17 @@ button {
   padding: 4% 0;
 }
 
+.hide-project{
+  display: none;
+}
+
+.loadMore{
+  cursor: pointer;
+}
+.loadMore:hover{
+  font-weight: bold;
+}
+
 .image_container {
   width: 80%;
   margin: auto;
@@ -483,13 +506,23 @@ a {
 form {
   width: 95%;
   margin: auto;
-  background: white;
+  background: rgb(255, 255, 255);
   max-width: 25rem;
   padding: 5%;
   border-radius: 1rem;
   box-shadow: 0.2rem 0.2rem 0.3rem var(--primary-blue);
+  overflow: hidden;
+  height: calc(85vh);
+  max-height: 380px;
+  opacity: 1;
+display: flex;justify-content: center;align-items: center;flex-direction: column;
 }
+.form-hide{
+  height: 100px;
+  padding: 0;
+  opacity: 0;
 
+}
 form:hover {
   transform: scale(0.97);
 }
@@ -497,6 +530,9 @@ button,
 input,
 textarea {
   outline: none;
+}
+.message{
+  min-height: 3rem;
 }
 
 label {
@@ -542,26 +578,43 @@ i {
   display: flex;
   margin: 2rem auto;
   justify-content: space-around;
+  align-items: center;
 }
 
 .social_icons .btn {
   min-width: 2.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-blue);
 }
 .social_icons a {
   width: 3rem;
 }
 
-.btn:hover {
+.social_icons .btn:hover {
   box-shadow: none;
+  background: inherit;
   transform: translateY(2px);
 }
+.icons{
+  display: flex;
+}
+
+
+
+
 @media (max-width: 500px) {
   header {
-    height: 100vh;
+    height: 85vh;
   }
 
   .header_left {
     width: 150%;
+  }
+  .its_me {
+    left: 0;
+    top : -2rem ;
   }
 
   .header_text_container {
@@ -572,7 +625,7 @@ i {
 
   .header_right_img_container {
     overflow: hidden;
-
+   margin-top: -40%;
     position: absolute;
     right: 0%;
   }
@@ -595,4 +648,8 @@ i {
     width: 100%;
     padding: 0 0.5rem;
   }
+  .social_icons{
+    flex-direction: column;
+  }
+ 
 }
